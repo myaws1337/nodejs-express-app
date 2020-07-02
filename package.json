@@ -19,6 +19,12 @@
       "pre-commit": "lint-staged"
     }
   },
+  "lint-staged": {
+    "*.{js,json,md,css,html}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
   "nyc": {
     "check-coverage": true,
     "per-file": true,
@@ -49,6 +55,7 @@
     "mocha": "^8.0.1",
     "nodemon": "^2.0.4",
     "nyc": "^15.1.0",
+    "prettier": "^2.0.5",
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0",
     "supertest": "^4.0.2"
