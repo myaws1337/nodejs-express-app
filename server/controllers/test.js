@@ -1,4 +1,4 @@
 /**
  * http://usejsdoc.org/
  */
-connection.query("SELECT * FROM bank_accounts WHERE dob = '"+ req.body.dob +"' AND bank_account = '"+ req.body.account_number5 +"'",function(error, results){});
+connection.query("SELECT * FROM product WHERE prod = '"+ req.body.prod +"' AND product_name = '"+ req.body.product_name +"'",function(error, results){});
