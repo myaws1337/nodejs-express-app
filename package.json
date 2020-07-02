@@ -16,7 +16,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && sh .git/hooks/pre-commit2"
     }
   },
   "lint-staged": {
