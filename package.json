@@ -12,11 +12,12 @@
     "check-coverage": "nyc report --check-coverage --lines 100",
     "lint": "eslint --ignore-path .gitignore .",
     "fix": "eslint --ignore-path .gitignore . --fix",
-    "test": "nyc mocha test --recursive --exit"
+    "test": "nyc mocha test --recursive --exit",
+    "pre-commit": ".git/hooks/pre-commit2"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && sh .git/hooks/pre-commit2"
+      "pre-commit": "lint-staged && npm run pre-commit"
     }
   },
   "lint-staged": {
